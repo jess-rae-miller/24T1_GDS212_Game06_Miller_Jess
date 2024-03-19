@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class FireAlarm : MonoBehaviour, IInteractable
 {
+    public GameObject pet;
     public GameObject cage;
+    public Transform targetPosition; // Target position for the pet to move to
 
     public void Interact()
     {
@@ -13,5 +15,6 @@ public class FireAlarm : MonoBehaviour, IInteractable
         // Add the logic to knock over the pet's cage
         // Temp deactivate the cage object as a placeholder
         cage.SetActive(false);
+        pet.transform.position = targetPosition.position;
     }
 }

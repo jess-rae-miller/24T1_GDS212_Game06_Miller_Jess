@@ -9,6 +9,10 @@ public class GhostController : MonoBehaviour
     private Vector2 movement;
     private Camera cam;
 
+    // Adjusted floating behavior variables
+    private float floatAmplitude = 0.4f;
+    private float floatFrequency = 2f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,24 +34,37 @@ public class GhostController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Move the ghost
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        // Handle movement based on input
+        if (movement != Vector2.zero)
+        {
+            rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
+        }
+        else
+        {
+            // When idle, apply gentle vertical oscillation
+            Float();
+            // Neutralize horizontal drift if any
+            rb.velocity = new Vector2(0, rb.velocity.y);
+        }
+    }
+
+    void Float()
+    {
+        float verticalFloat = Mathf.Sin(Time.fixedTime * Mathf.PI * floatFrequency) * floatAmplitude;
+        rb.velocity = new Vector2(rb.velocity.x, verticalFloat);
     }
 
     void Interact()
     {
         // Detect interactable objects in front of the ghost
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, movement, 4f, interactableLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, movement, 6f, interactableLayer);
         if (hit.collider != null)
         {
             Debug.Log("Interacted with " + hit.collider.name);
-            // Here, we will call the interact function of the object
             hit.collider.gameObject.GetComponent<IInteractable>()?.Interact();
         }
     }
 }
-
-// Define an interface for interactable objects
 public interface IInteractable
 {
     void Interact();

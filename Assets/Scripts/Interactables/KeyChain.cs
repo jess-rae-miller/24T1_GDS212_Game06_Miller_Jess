@@ -1,15 +1,18 @@
+using TMPro;
 using UnityEngine;
 
 public class KeyChain : MonoBehaviour, IInteractable
 {
+    public GameObject pet;
     public GameObject nextPuzzleObject;
+    public Transform targetPosition; // Target position for the pet to move to
 
     public void Interact()
     {
         // Simulate jiggling keys to attract the pet's attention
         Debug.Log("KeyChain Interacted: The keys jiggle, leading the pet to the next room.");
         // Optionally, trigger an animation or sound effect here
-        // For demonstration, we could enable the next puzzle object or trigger its behavior
+        pet.transform.position = targetPosition.position;
         nextPuzzleObject.SetActive(true);
     }
 }
