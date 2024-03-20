@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class GhostController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    [SerializeField] public float moveSpeed = 5f;
     public LayerMask interactableLayer; // Layer for interactable objects
 
     private Rigidbody2D rb;
     private Vector2 movement;
     private Camera cam;
 
-    // Adjusted floating behavior variables
-    private float floatAmplitude = 0.4f;
-    private float floatFrequency = 2f;
+    private float floatAmplitude = 1f;
+    private float floatFrequency = 3f;
 
     void Start()
     {
@@ -26,7 +25,7 @@ public class GhostController : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         // Check for interactions
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
         }
