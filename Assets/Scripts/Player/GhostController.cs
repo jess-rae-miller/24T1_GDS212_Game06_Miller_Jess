@@ -9,7 +9,6 @@ public class GhostController : MonoBehaviour
     private Vector2 movement;
     private Camera cam;
 
-    // Adjusted floating behavior variables
     private float floatAmplitude = 1f;
     private float floatFrequency = 3f;
 
