@@ -71,9 +71,7 @@ public class Clothing : MonoBehaviour
         smokeAlarmSource.Play();
 
         // Trigger the fire alarm sequence here
-        PuzzleManager.Instance.CompleteClothingOnHeater();
-        Debug.Log("Clothing has burned. Fire alarm is triggered.");
-        gameObject.SetActive(true); // Deactivate the burned clothing
+        PuzzleManager.Instance.CompleteFireAlarmPuzzle();
     }
 
     IEnumerator FlashSmokeAlarm()

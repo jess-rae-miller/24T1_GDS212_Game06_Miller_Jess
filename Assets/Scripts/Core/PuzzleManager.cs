@@ -6,20 +6,18 @@ public class PuzzleManager : MonoBehaviour
 {
     public static PuzzleManager Instance { get; private set; }
 
-    // Flags for puzzle completion state
-    public bool IsClothingOnHeaterComplete = false;
-    public bool IsToiletFlushed = false;
-    public bool IsKeysDelivered = false;
-    public bool IsRatPossessionComplete = false;
-    public bool IsPlateBridgeFormed = false;
+    // Use these flags to track the completion of each puzzle
+    public bool IsFireAlarmPuzzleComplete { get; private set; }
+    public bool IsToiletPuzzleComplete { get; private set; }
+    public bool IsKeyPuzzleComplete { get; private set; }
+    public bool IsRatPossessionComplete { get; private set; }
 
     private void Awake()
     {
-        // Implementing Singleton pattern
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject); // Optional: Keep this object persistent between scenes
         }
         else
         {
@@ -27,12 +25,28 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
-    // Method to call when clothing is successfully placed on the heater
-    public void CompleteClothingOnHeater()
+    // Methods to mark each puzzle as complete
+    public void CompleteFireAlarmPuzzle()
     {
-        IsClothingOnHeaterComplete = true;
-        Debug.Log("Clothing on Heater puzzle completed.");
+        IsFireAlarmPuzzleComplete = true;
+        // Optionally, enable the next puzzle here
     }
 
-    // Add similar methods for other puzzle completion flags as needed
+    public void CompleteToiletPuzzle()
+    {
+        IsToiletPuzzleComplete = true;
+        // Optionally, enable the next puzzle here
+    }
+
+    public void CompleteKeyPuzzle()
+    {
+        IsKeyPuzzleComplete = true;
+        // Optionally, enable the next puzzle here
+    }
+
+    public void CompleteRatPossession()
+    {
+        IsRatPossessionComplete = true;
+        // Optionally, enable the next puzzle or the game end sequence here
+    }
 }

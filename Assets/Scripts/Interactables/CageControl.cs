@@ -21,29 +21,37 @@ public class CageControl : MonoBehaviour
 
     IEnumerator FallAndMovePetSequence()
     {
+        // Determine the target rotation for when the cage has fallen
+        Quaternion targetRotation = Quaternion.Euler(0, 0, 90); // Adjust this target rotation as needed
+
         // Make the cage and the pet fall to their respective points
         while (transform.position != cageFallPoint.position || pet.transform.position != petFallPoint.position)
         {
             if (transform.position != cageFallPoint.position)
             {
+                // Move the cage towards its fall point
                 transform.position = Vector3.MoveTowards(transform.position, cageFallPoint.position, fallSpeed * Time.deltaTime);
-                transform.Rotate(new Vector3(0, 0, rotateSpeed) * Time.deltaTime); // Rotate the cage as it falls
+
+                // Rotate the cage towards its target rotation at the same time
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
             }
+
             if (pet.transform.position != petFallPoint.position)
             {
+                // Move the pet towards its fall point
                 pet.transform.position = Vector3.MoveTowards(pet.transform.position, petFallPoint.position, fallSpeed * Time.deltaTime);
             }
             yield return null;
         }
 
-        yield return new WaitForSeconds(0.5f); // Brief pause after falling
+        // Wait for 2 seconds after the cage has settled
+        yield return new WaitForSeconds(2);
 
-        // Pet jumps out to a specific point
+        // Pet jumps out to a specific point after the cage has tipped
         yield return MoveToTarget(pet.transform, petJumpOutPoint.position, petMoveSpeed);
 
         // Pet moves to the bathroom point
         yield return MoveToTarget(pet.transform, petBathroomPoint.position, petMoveSpeed);
-
     }
 
     IEnumerator MoveToTarget(Transform objectToMove, Vector3 target, float speed)

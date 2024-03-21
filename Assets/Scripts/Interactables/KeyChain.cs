@@ -1,64 +1,75 @@
+using System.Collections;
 using UnityEngine;
 
-public class Keychain : MonoBehaviour
+public class Keychain : MonoBehaviour, IInteractable
 {
-    public Transform carryPoint; // Assign in the Unity Editor
-    public float followSpeed = 2f; // Adjust follow speed as needed
+    public Transform carryPoint;
+    public GameObject pet;
+    public Transform petRunToPoint;
+    public Transform dropArea; // The area where the key should be dropped
+    public float followSpeed = 2f;
     private bool isCarried = false;
+    private bool hasBeenDropped = false;
     private Collider2D keychainCollider;
-    private Rigidbody2D rb;
 
     void Start()
     {
         keychainCollider = GetComponent<Collider2D>();
-        rb = GetComponent<Rigidbody2D>();
-        // Make sure the Rigidbody2D starts in a suitable state
-        rb.isKinematic = true; // Prevent it from being affected by physics while not carried
     }
 
     void Update()
     {
-        if (isCarried)
+        if (isCarried && !hasBeenDropped)
         {
-            // Smoothly interpolate the position of the keychain towards the carryPoint
+            // Make the keychain follow the carryPoint smoothly
             transform.position = Vector3.Lerp(transform.position, carryPoint.position, followSpeed * Time.deltaTime);
-        }
-
-        if (Input.GetKeyDown(KeyCode.E) && !isCarried)
-        {
-            float distanceToGhost = Vector3.Distance(transform.position, carryPoint.position);
-            if (distanceToGhost < 1.5f) // Adjust the pickup distance as needed
-            {
-                PickUp();
-            }
         }
     }
 
-    public void PickUp()
+    public void Interact()
+    {
+        if (!isCarried && !hasBeenDropped && PuzzleManager.Instance.IsToiletPuzzleComplete)
+        {
+            PickUp();
+        }
+    }
+
+    private void PickUp()
     {
         isCarried = true;
-        keychainCollider.isTrigger = false; // Disable its trigger state
-        rb.isKinematic = true; // Optionally keep it kinematic if it should not fall while being carried
-        // You might want to adjust the keychain's localPosition if it's not visually appearing where you expect relative to the carryPoint.
-        transform.position = carryPoint.position;
+        // You could disable the collider here if you want to avoid any physical interaction after picking up
+        keychainCollider.isTrigger = true;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log($"Entered trigger with: {other.gameObject.name}");
         if (other.CompareTag("KeychainDropArea") && isCarried)
         {
-            Debug.Log("Dropping keychain");
             Drop();
         }
     }
 
     private void Drop()
     {
+        if (hasBeenDropped) return; // Prevent the method from running more than once
+
         isCarried = false;
-        // Detach the keychain from the carry point, letting it naturally fall or rest on the ground
-        transform.parent = null;
-        rb.isKinematic = false; // Allow it to be affected by physics again
-        rb.gravityScale = 1; // Ensure it falls under gravity
+        hasBeenDropped = true;
+        // Since we're not using physics to drop the key anymore, move it to a specific spot, like on a table
+        transform.position = dropArea.position; // Assuming dropArea is the final resting place of the key
+        keychainCollider.isTrigger = true; // Keep it as trigger if you want it to land on objects without physical collision
+
+        // Trigger pet to run to the next point
+        if (pet != null && petRunToPoint != null)
+        {
+            PetMovement petMovement = pet.GetComponent<PetMovement>();
+            if (petMovement != null)
+            {
+                StartCoroutine(petMovement.MoveToTarget(petRunToPoint.position));
+            }
+        }
+
+        // Mark the key puzzle as complete
+        PuzzleManager.Instance.CompleteKeyPuzzle();
     }
 }

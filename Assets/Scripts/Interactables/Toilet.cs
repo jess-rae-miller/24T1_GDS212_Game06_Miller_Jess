@@ -10,11 +10,17 @@ public class Toilet : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        // Ensure the previous puzzle (Fire Alarm Puzzle) is completed before proceeding
+        if (!PuzzleManager.Instance.IsFireAlarmPuzzleComplete) return;
+
         // Play the flushing sound
         flushSound.Play();
 
         // Start the pet's smooth movement to the designated point
         StartCoroutine(MovePetToTarget(pet.transform, petRunToPoint.position, 3f)); // Adjust speed as needed
+
+        // Mark this puzzle as complete
+        PuzzleManager.Instance.CompleteToiletPuzzle();
     }
 
     private IEnumerator MovePetToTarget(Transform pet, Vector3 target, float speed)

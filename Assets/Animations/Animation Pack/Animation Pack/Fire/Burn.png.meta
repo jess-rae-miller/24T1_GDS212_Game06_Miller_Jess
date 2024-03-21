@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -74,7 +74,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -147,7 +147,994 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Burn_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1170
+        width: 54
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572162fddc4aaee4c94393b35d09759a
+      internalID: 1182672389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1040
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9104790d0dd7ec4ba94d24cc779f67c
+      internalID: -390385295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 918
+        width: 68
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc6c7378ce24ca478989de71de6219b
+      internalID: 504282505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 804
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0a3e656419da04eb1491c69b96344c
+      internalID: -729443435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 800
+        width: 74
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2a0dad67465654e98cc5193cc67902
+      internalID: 1897730894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 682
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be549548e723454f8191fcace10a868
+      internalID: -73577312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 702
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db9c6f24cab4cb45ab4aab8045a110f
+      internalID: -882658485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_7
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 698
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b52f7829affc2646bf169556ad7c5e6
+      internalID: 69210732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 678
+        width: 56
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196aee9819d13984f9c088dbe10716d9
+      internalID: 613119993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 672
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df83a1df60b5aa742ba79aae0a88a974
+      internalID: 1460218957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 672
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb9db2e92910fa4a9312e0af79fa071
+      internalID: 961427617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 582
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db84de26c94fc5841a0d456e0f2b70b9
+      internalID: -504311664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 588
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdc8b3fbd30ab845ac02640669ec25d
+      internalID: -1463840340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 590
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061d7d6aed762c648ab9bd10b5cbaf1b
+      internalID: -1479802515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 584
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7210ae3af8eb4a04d9c1f33f6f8b7c4e
+      internalID: 130940883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_15
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 576
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a876788b6e47a47a7889797769748b
+      internalID: 2074577891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_16
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 576
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e94584660526f546b84c591247b00ea
+      internalID: 2090430970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_17
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 560
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2f4cc42a1ea0c4885577d37c175286
+      internalID: -50280808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 558
+        width: 40
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4d0bc29804c374c80bb4565d534225
+      internalID: 907793040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 556
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d44a165dd283646a65a3d5fbc0ecf4
+      internalID: -622340898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_20
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 538
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a71f7e59358b0c44b4ac3179b9a5f2c
+      internalID: 1770876906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_21
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 550
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b48e82bc02b9f843b87e9942b1f9258
+      internalID: -858248882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 468
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf8692f51d67a4469fc03e37e7d35a9
+      internalID: 474353968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 466
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33282b3a1935a74796b6961692aa0f5
+      internalID: -1164492954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_24
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 462
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cf30cb64040854f84abcf42be45519
+      internalID: -82234554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_25
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 458
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbff85e7630eef4fbe5232a64f78ce9
+      internalID: 1105519679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_26
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 460
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89878754ca7fc642985afb9cde652ae
+      internalID: 370923109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_27
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 456
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8f1c7cad7af6240af416571265fb57
+      internalID: -1954691815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_28
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 450
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2936969693d0b04ba3e78526bbe9f2c
+      internalID: -868551847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 448
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a0e9d97590bc94db303a0132a6edcf
+      internalID: 773180023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_30
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 456
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f653dabf7eb2c47a914f1f0defa45a
+      internalID: 1752516744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 416
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabf061413f33dd408d5dd7522aff05b
+      internalID: 1266224768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_32
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 418
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482f2ca589cfb2f4482455490ef9060e
+      internalID: -1879200072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_33
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 426
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961d43dfaa4c9f84da1c7e20a1aee5f7
+      internalID: -805633572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 338
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95323da5b28e5747bee16a6c92db52a
+      internalID: 1207190016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_35
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 350
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5460b6f6467d394bb7c5b1422c99926
+      internalID: -890426236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_36
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 334
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712ea181a077afe47a7e746ec6e05b44
+      internalID: 1695159790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_37
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 324
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e8a095b9a17204f8454dc29f26241a
+      internalID: -1972495176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_38
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 328
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919c3109bd2568a4ea972b67f0ba3d51
+      internalID: -1438909689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_39
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 312
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3630add01390d4aa4b1704238a5345
+      internalID: -1026523937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_40
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 294
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e48b1467d263d40bf2f80d9edc2203
+      internalID: 1331814254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_41
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 294
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f90f392e74fc44b845733793d6056f
+      internalID: 644827630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_42
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 214
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa94dabddf42aac4badc0a3bdf06b0d7
+      internalID: -1613779355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_43
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 196
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4920331d8cea68c4088e5a1831b1e968
+      internalID: 1058626495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_44
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 202
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d79a874bb14974688420ac78c0c2a5
+      internalID: -829145992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_45
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 188
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e55ee00fb68f14a95486dcf0c74ed1
+      internalID: 1515229995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burn_46
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 184
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ab4f6760b80c640949a3d77e38afba
+      internalID: -1392104057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +1145,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Burn_0: 1182672389
+      Burn_1: -390385295
+      Burn_10: 961427617
+      Burn_11: -504311664
+      Burn_12: -1463840340
+      Burn_13: -1479802515
+      Burn_14: 130940883
+      Burn_15: 2074577891
+      Burn_16: 2090430970
+      Burn_17: -50280808
+      Burn_18: 907793040
+      Burn_19: -622340898
+      Burn_2: 504282505
+      Burn_20: 1770876906
+      Burn_21: -858248882
+      Burn_22: 474353968
+      Burn_23: -1164492954
+      Burn_24: -82234554
+      Burn_25: 1105519679
+      Burn_26: 370923109
+      Burn_27: -1954691815
+      Burn_28: -868551847
+      Burn_29: 773180023
+      Burn_3: -729443435
+      Burn_30: 1752516744
+      Burn_31: 1266224768
+      Burn_32: -1879200072
+      Burn_33: -805633572
+      Burn_34: 1207190016
+      Burn_35: -890426236
+      Burn_36: 1695159790
+      Burn_37: -1972495176
+      Burn_38: -1438909689
+      Burn_39: -1026523937
+      Burn_4: 1897730894
+      Burn_40: 1331814254
+      Burn_41: 644827630
+      Burn_42: -1613779355
+      Burn_43: 1058626495
+      Burn_44: -829145992
+      Burn_45: 1515229995
+      Burn_46: -1392104057
+      Burn_5: -73577312
+      Burn_6: -882658485
+      Burn_7: 69210732
+      Burn_8: 613119993
+      Burn_9: 1460218957
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
