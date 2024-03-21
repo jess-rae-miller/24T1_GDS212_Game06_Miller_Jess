@@ -80,7 +80,7 @@ public class Clothing : MonoBehaviour
     {
         bool isRed = false;
         Color32 redColor = new Color32(204, 0, 0, 255);
-        Color32 whiteColor = Color.white; // Pure white
+        Color32 whiteColor = Color.white;
 
         while (true) // Infinite loop, break it when you want to stop flashing
         {
