@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GhostController : MonoBehaviour
@@ -42,7 +44,6 @@ public class GhostController : MonoBehaviour
         {
             // When idle, apply gentle vertical oscillation
             Float();
-            // Neutralize horizontal drift if any
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
@@ -63,8 +64,20 @@ public class GhostController : MonoBehaviour
             hit.collider.gameObject.GetComponent<IInteractable>()?.Interact();
         }
     }
+    public void ReactivateGhost()
+    {
+        // Reactivate the ghost (if it was deactivated during possession)
+        gameObject.SetActive(true);
+
+        // Assuming the camera should be re-parented to the ghost when it reactivates
+        Camera.main.transform.SetParent(transform);
+        Camera.main.transform.localPosition = new Vector3(0, 0, -10); // Reset the camera position relative to the ghost
+
+        // Additional logic to resume normal ghost behavior and camera following
+    }
 }
 public interface IInteractable
 {
     void Interact();
 }
+

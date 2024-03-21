@@ -26,13 +26,13 @@ public class Clothing : MonoBehaviour
             float distanceToGhost = Vector3.Distance(transform.position, ghostTransform.position);
 
             // Check if the ghost is close enough to interact
-            if (distanceToGhost < 1.5f) // 1.5f is an example distance; adjust as needed
+            if (distanceToGhost < 1.5f)
             {
                 if (!isCarried)
                 {
                     // Attach the clothing to the ghost
                     transform.parent = ghostTransform;
-                    transform.localPosition = Vector3.zero; // Adjust this to position the clothing correctly relative to the ghost
+                    transform.localPosition = Vector3.zero;
                     isCarried = true;
                 }
                 else
